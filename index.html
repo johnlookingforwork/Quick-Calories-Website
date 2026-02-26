@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Calories - AI-Powered Calorie Counter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #1a1a1a;
+            background: #fafafa;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #fff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav .container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #22c55e;
+            text-decoration: none;
+        }
+
+        nav .links a {
+            color: #666;
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        nav .links a:hover {
+            color: #22c55e;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 24px 60px;
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #f0fdf4 100%);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            color: #22c55e;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #555;
+            max-width: 560px;
+            margin: 0 auto 32px;
+        }
+
+        .badge {
+            display: inline-flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .badge span {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .features {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .feature-card .icon {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .feature-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 24px;
+            border-top: 1px solid #e5e5e5;
+            color: #999;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #22c55e;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">Quick Calories</a>
+            <div class="links">
+                <a href="/privacy">Privacy Policy</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1><span>Quick Calories</span></h1>
+        <p>AI-powered calorie tracking for iOS. Describe your meal, snap a photo, and track your nutrition effortlessly.</p>
+        <div class="badge">
+            <span>iOS 17+</span>
+            <span>SwiftUI</span>
+            <span>AI-Powered</span>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon">✨</div>
+                <h3>AI Food Logging</h3>
+                <p>Describe meals in natural language or snap a photo. AI handles the rest.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📊</div>
+                <h3>7-Day Dashboard</h3>
+                <p>Color-coded progress indicators show your week at a glance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📅</div>
+                <h3>Calendar History</h3>
+                <p>Monthly view with goal indicators. Tap any day for details.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🏃</div>
+                <h3>Workout Tracking</h3>
+                <p>Log exercises with calories burned and see your net intake.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📚</div>
+                <h3>Saved Foods</h3>
+                <p>Create custom foods for instant logging without AI.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🎯</div>
+                <h3>Macro Tracking</h3>
+                <p>Protein, carbs, and fat breakdown with daily targets.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Quick Calories. <a href="/privacy">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
